@@ -10,7 +10,7 @@ app.get("/",function(req,res){
 
 app.get("/result",function(req,res){
     var query = req.query.search;
-    var url = "http://www.omdbapi.com/?s=" + query + "&apikey=d610010f";
+    var url = "http://www.omdbapi.com/?s=" + query + "&apikey=--------------------------------------";
     request(url,function(error,respone,body){
         if(!error && respone.statusCode == 200){
             parsedData = JSON.parse(body);
