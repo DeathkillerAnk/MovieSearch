@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            Search Movie
+        </title>
+    </head>
+    <body>
+        <ul>
+            <% parsedData["Search"].forEach(function(movie){ %>
+                <li> <%= movie["Title"] %> - <%= movie["Year"]%></li>
+            <% }) %>
+        </ul>
+       
+    </body>
+</html>
